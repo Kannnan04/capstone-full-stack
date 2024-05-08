@@ -40,7 +40,7 @@ const Form = () => {
         const payloads = { option, option1, option2, detail1, detail2, AvailableTime1, AvailableTime2 }
 
 
-        await axios.post('http://localhost:8080/api/newquery', payloads)
+        await axios.post('https://final-project-backend-hevr.onrender.com/api/newquery', payloads)
             .then((res) => {
                 setResponseMsg(res.data.message)
                 navigate('/queries')
