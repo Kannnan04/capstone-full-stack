@@ -1,0 +1,119 @@
+
+/* chat gpt */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.content-box{
+    margin-left: -300px;
+}
+.join-text{
+    font-size: 30px;
+}
+
+.join-class {
+    background-color: #4b0082;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.session-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap-container {
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.roadmap-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.roadmap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150%;
+}
+.input-text{
+    font-size: larger;
+}
+
+.session {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4b0082;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .roadmap {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .roadmap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .roadmap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .session {
+        width: 30px;
+        height: 30px;
+        font-size: 0.875rem;
+    }
+}

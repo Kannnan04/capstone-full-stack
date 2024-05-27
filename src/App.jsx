@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import Reports from './pages/Report';
 import Products from './pages/Product';
 import Queries from './pages/Queries';
-import Support from './pages/Support';
 import Teams from './pages/Teams';
 import Message from './pages/Message';
 import Form from './pages/Form';
@@ -24,7 +23,6 @@ function App() {
           <Route path='/task' element={<Products />} />
           <Route path='/queries' element={<Queries />} />
           <Route path='/message' element={<Message />} />
-          <Route path='/support' element={<Support />} />
           <Route path='/teams' element={<Teams />} />
           <Route path='/form' element={<Form />} />
           
