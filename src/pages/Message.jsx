@@ -14,7 +14,7 @@ const Message = () => {
         } else {
             setErrorMessage('');
             alert('Form submitted successfully!');
-            // Optionally, submit the form data here
+    
         }
     };
 

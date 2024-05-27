@@ -29,9 +29,7 @@ const Form = () => {
         setOption2('');
     };
 
-    // setInterval(() => {
-    //     console.log("register api ", option, option1,option2, detail1, detail2, AvailableTime1, AvailableTime2);
-    // }, 2000);
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -40,7 +38,7 @@ const Form = () => {
         const payloads = { option, option1, option2, detail1, detail2, AvailableTime1, AvailableTime2 }
 
 
-        await axios.post('https://final-project-backend-hevr.onrender.com/api/newquery', payloads)
+        await axios.post('https://capstone-final-backend-c01r.onrender.com/api/newquery', payloads)
             .then((res) => {
                 setResponseMsg(res.data.message)
                 navigate('/queries')
@@ -48,12 +46,7 @@ const Form = () => {
             .catch((err) => {
                 console.log(err);
             })
-        // if (file) {
-        //     console.log('Selected file:', file);
-        //     setFile(null);
-        //   } else {
-        //     alert('Please select a file.');
-        //   }
+
     }
 
 
@@ -66,16 +59,11 @@ const Form = () => {
 
 
 
-     const history = useNavigate();
+    const history = useNavigate();
     const handle = () => {
-        history('/queries'); // Navigate back to the previous page
+        history('/queries'); e
     };
 
-
-    // const Submit = useNavigate()
-    // const Click = () => {
-    //     history('/queries')
-    // }
 
     return (
 

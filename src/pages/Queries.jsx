@@ -11,7 +11,7 @@ const Queries = () => {
     useEffect(() => {
         const loadQueries = async () => {
             try {
-                const response = await axios.get("https://final-project-backend-hevr.onrender.com/api/allquery");
+                const response = await axios.get("https://capstone-final-backend-c01r.onrender.com/api/allquery");
                 setAllQueries(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);

@@ -4,7 +4,6 @@ import "./Home.css";
 
 function Home() {
   return (
-    // chat GPT code
 
     <div class="container-fluid">
       <div class="row header">

@@ -4,45 +4,6 @@ import './Report.css';
 function Reports() {
   return (
 
-    // <div class="container-fluid custom-container-fluid">
-    //   <div class="d-flex justify-content-between">
-    //     <div class="dashboard">
-    //       <h1>Dashboard</h1>
-    //     </div>
-
-    //     <div class="user-name">
-    //       <h1>Kannan Siva</h1>
-    //     </div>
-    //   </div>
-    //   <hr />
-
-    //   <div class='container-activites'>
-
-    //     <h1 class='activites'>Activities</h1>
-
-    //     <div class="container-inside">
-    //       <div class="col-6 col-md-6">
-    //         <img src="https://pub.mdpi-res.com/sensors/sensors-22-00876/article_deploy/html/images/sensors-22-00876-g006-550.jpg?1643019738" class="img-fluid" alt="first" />
-    //       </div>
-    //       <div class="col-6 col-md-6">
-    //         <img src="https://graphaware.com/images/glossary/chart-vs-graph.png" class="img-fluid img-sec" alt="second" />
-    //       </div>
-    //     </div>
-
-
-    //     <div class="row">
-    //       <div class="col-12 col-md-6 center-img sec-img">
-    //         <img src="https://blog.atinternet.com/wp-content/uploads/2016/05/2_graphique_barres.png" class="img-fluid" id='full-img' alt="img-fluid" />
-    //       </div>
-    //     </div>
-
-
-    //   </div>
-
-    // </div>
-
-    // chatGPD
-
     <div class="container-fluid">
       <div class="row header">
         <div class="col">
