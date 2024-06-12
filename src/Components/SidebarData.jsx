@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
@@ -9,7 +10,7 @@ import { FaHandsHelping } from "react-icons/fa";
 export const SidebarData = [
   {
     title: 'Class',
-    path: '/',
+    path: '/home',
     icon: <MdClass />,
     cName: 'nav-text'
   },
@@ -42,7 +43,8 @@ export const SidebarData = [
     path: '/queries',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
-  },
+  }
+  
   
 
 

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import './Message.css';
 
@@ -14,17 +15,17 @@ const Message = () => {
         } else {
             setErrorMessage('');
             alert('Form submitted successfully!');
-    
+
         }
     };
 
     return (
-        <div class="container-fluid">
-            <div class="row header">
-                <div class="col">
+        <div className="container-fluid">
+            <div className="row header">
+                <div className="col">
                     <h1>Task Submissions</h1>
                 </div>
-                <div class="col user-info">
+                <div className="col user-info">
                     <h1>Kannan Siva</h1>
                 </div>
             </div>
@@ -82,7 +83,7 @@ const Message = () => {
                     </div>
                 </div>
             </div>
-    
+
         </div >
     );
 };

@@ -1,38 +1,41 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import ForgotPassword from './pages/ForgotPassword';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import Reports from './pages/Report';
 import Products from './pages/Product';
 import Queries from './pages/Queries';
 import Teams from './pages/Teams';
 import Message from './pages/Message';
 import Form from './pages/Form';
+import Layout from './pages/Layout';
 
-
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
+    <Router>
+      <Routes>
+        {/* Public routes */}
+        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Register />} />
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
+
+        {/* Layout component handles the rendering of the Navbar */}
+        <Route element={<Layout />}>
+          <Route path='/home' element={<Home />} />
           <Route path='/reports' element={<Reports />} />
           <Route path='/task' element={<Products />} />
           <Route path='/queries' element={<Queries />} />
           <Route path='/message' element={<Message />} />
           <Route path='/teams' element={<Teams />} />
           <Route path='/form' element={<Form />} />
-          
-
-        </Routes>
-      </Router>
-    </>
+        </Route>
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
-
-

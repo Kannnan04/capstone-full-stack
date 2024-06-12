@@ -1,49 +1,36 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-}
-
+/* Home.css */
 .container-fluid {
-    width: 100%;
-    padding: 20px;
+    padding: 0 15px;
 }
 
-.header {
+.row .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
 }
 
-.header h1 {
-    margin: 0;
+.row.header .col {
+    flex: 1;
 }
 
-.user-info {
-    text-align: right;
-}
-
-.main-content {
+.row.main-content {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
-}
-.content-box{
-    margin-left: -300px;
-}
-.join-text{
-    font-size: 30px;
 }
 
-.join-class {
-    background-color: #4b0082;
+.col-md-9.content-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.join-className {
+    background-color: #4a148c;
     color: white;
     padding: 10px;
-    border-radius: 5px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -51,66 +38,48 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .roadmap-container {
-    max-width: 300px;
-    margin-left: auto;
-}
-
-.roadmap-container h2 {
-    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 .roadmap {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 150%;
-}
-.input-text{
-    font-size: larger;
 }
 
 .session {
+    width: 40px;
+    height: 40px;
+    background-color: #4a148c;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #4b0082;
-    color: white;
     border-radius: 50%;
-    font-weight: bold;
-    font-size: 1rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .roadmap {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .roadmap {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 400px) {
-    .roadmap {
-        grid-template-columns: repeat(2, 1fr);
+    .row.header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .session {
-        width: 30px;
-        height: 30px;
-        font-size: 0.875rem;
+    .row.main-content {
+        flex-direction: column;
+    }
+
+    .col-md-9.content-box,
+    .roadmap-container {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
